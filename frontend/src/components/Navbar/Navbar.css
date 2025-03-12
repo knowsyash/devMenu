@@ -1,0 +1,95 @@
+/* Navbar container */
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.Navbar img {
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Navbar menu */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-menu li {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li:hover {
+    color: #ff6600;
+}
+
+/* Navbar right section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-search-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+}
+
+.navbar-search-icon img {
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Basket notification dot */
+.dot {
+    position: absolute;
+    top: 0;
+    right: 5.1rem;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.Navbar li{
+    cursor: pointer;
+}
+/* Sign-in button */
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e55b00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
+}
+.Navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}

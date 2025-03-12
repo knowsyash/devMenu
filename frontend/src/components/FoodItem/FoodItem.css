@@ -1,0 +1,160 @@
+/* Food Item Container */
+.food-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    width: 250px; /* Adjust the width as needed */
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Food Item Image */
+.food-item-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Add & Remove Button Container */
+.food-item-controls {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Single Add Icon (When itemCount is 0) */
+.add-icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.add-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Quantity Control (When itemCount > 0) */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+/* Remove & Add Icon Styling */
+.control-icon {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.control-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Remove Icon */
+.remove-icon {
+    filter: brightness(1.2);
+}
+
+/* Item Count */
+.item-count {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Food Item Information */
+.food-item-info {
+    padding: 10px 0;
+}
+
+/* Food Name */
+.food-item-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Rating Section */
+.food-item-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.food-item-rating img {
+    width: 80px;
+    height: auto;
+}
+
+/* Food Description */
+.food-item-desc {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* Food Price */
+.food-item-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .food-item {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .food-item {
+        padding: 10px;
+    }
+
+    .food-item-name {
+        font-size: 1rem;
+    }
+
+    .food-item-price {
+        font-size: 1rem;
+    }
+
+    .quantity-controls {
+        padding: 4px 8px;
+        gap: 8px;
+    }
+
+    .control-icon {
+        width: 24px;
+        height: 24px;
+    }
+}

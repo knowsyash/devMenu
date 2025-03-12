@@ -1,0 +1,19 @@
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Spacing between items */
+    padding: 20px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
+    .food-display-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .food-display-list {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+    }
+}

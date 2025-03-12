@@ -1,0 +1,78 @@
+/* Centering and Styling */
+.explore-menu {
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .explore-menu h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .explore-menu-text {
+    font-size: 1.2rem;
+    color: gray;
+    margin-bottom: 1rem;
+  }
+  
+  /* Outer container to prevent overflow cuts */
+  .explore-menu-list-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari */
+  .explore-menu-list-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Actual scrolling list */
+  .explore-menu-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.2rem; /* Reduced the gap between items */
+    padding-bottom: 10px;
+    width: max-content; /* Ensures it overflows for scrolling */
+  }
+  
+  /* Individual menu items */
+  .explore-menu-list-item {
+    flex: 0 0 auto;
+    width: 150px;
+    padding: 0.5rem; /* Reduced padding to bring elements even closer */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  /* Image Styling */
+  .explore-menu-list-item img {
+    width: 7.5vw;
+    max-width: 140px;
+    cursor: pointer;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  /* Menu item text */
+  .explore-menu-list-item p {
+    margin-top: 0.3rem; /* Reduced margin to bring text closer */
+    font-size: 1rem;
+  }
+  
+  hr {
+    border: none; /* Remove default border */
+    height: 2px; /* Set thickness */
+    background-color: #ddd; /* Light gray color */
+    margin: 20px auto; /* Add spacing and center */
+    width: 80%; /* Adjust width */
+  }
+  .explore-menu-list-item  .active{
+         border: solid 4px red;
+         padding: 0.25rem;
+  }

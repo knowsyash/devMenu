@@ -1,0 +1,68 @@
+.checkout-container {
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .delivery-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .input-box {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .full-width {
+    grid-column: span 2;
+  }
+  
+  .cart-totals {
+    font-size: 22px;
+    font-weight: bold;
+    color: #234;
+    margin-top: 20px;
+  }
+  
+  .cart-summary {
+    margin-top: 10px;
+  }
+  
+  .bold {
+    font-weight: bold;
+    color: #234;
+    font-size: 18px;
+  }
+  
+  .price {
+    float: right;
+    font-weight: bold;
+    color: #234;
+  }
+  
+  .total {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .payment-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .payment-button:hover {
+    background-color: #e04e2a;
+  }
+  
