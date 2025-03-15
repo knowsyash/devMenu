@@ -1,0 +1,132 @@
+/* Main Form Container */
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+/* Flex Column Layout */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Reduced width */
+}
+
+/* Form Card */
+.add-img-upload {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Reduced size */
+}
+
+/* Image Upload Box */
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+
+.image img {
+    width: 80%;
+}
+
+/* Description Box */
+.add-product-description {
+    width: 100%;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.add-product-description p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-size: 14px;
+}
+
+/* Category and Price Section */
+.add-category-price {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.add-category,
+.add-price {
+    width: 50%;
+}
+
+/* Input Fields */
+select, 
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Submit Button */
+.add-btn {
+    width: 100%;
+    padding: 10px;
+    background: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.add-btn:hover {
+    background: #e64a19;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 500px) {
+    .add-img-upload {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .image {
+        width: 90px;
+        height: 90px;
+    }
+
+    textarea {
+        height: 70px;
+    }
+
+    .add-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

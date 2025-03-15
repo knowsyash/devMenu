@@ -1,0 +1,52 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 250px; /* Shift to the right of Sidebar */
+    width: calc(100% - 250px); /* Leave space for Sidebar */
+    height: 60px;
+    z-index: 1000;
+    transition: left 0.3s ease;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: width 0.3s ease;
+}
+
+/* Content Section */
+.app-content {
+    margin-left: 250px; /* Leaves space for Sidebar */
+    padding: 80px 20px 20px; /* Add padding to avoid Navbar overlap */
+    transition: margin-left 0.3s ease;
+}
+
+/* When Sidebar is Collapsed */
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.navbar.full-width {
+    left: 60px;
+    width: calc(100% - 60px);
+}
+
+.app-content.full-width {
+    margin-left: 60px;
+}

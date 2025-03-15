@@ -1,0 +1,43 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 250px); /* Leaves space for Sidebar */
+    height: 60px;
+    z-index: 1000;
+    transition: width 0.3s ease;
+}
+
+/* Logo */
+.logo {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+}
+
+/* User Profile */
+.profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-right: 2rem;
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+/* When Sidebar is Collapsed */
+.navbar.full-width {
+    width: 100%;
+}

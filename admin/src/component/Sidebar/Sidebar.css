@@ -1,0 +1,65 @@
+/* Sidebar Container */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: width 0.3s ease;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Sidebar Options */
+.sidebar-option {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: 1px solid #ddd;
+    margin: 10px;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;
+}
+
+/* Sidebar Option Hover Effect */
+.sidebar-option:hover {
+    background: #f7f7f7;
+}
+
+/* Sidebar Icons */
+.sidebar-option img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    transition: margin-right 0.3s ease; /* Smooth transition */
+}
+
+/* Sidebar Text */
+.sidebar-option p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    transition: opacity 0.3s ease; /* Smooth hide effect */
+}
+
+/* Collapsed Sidebar */
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar.collapsed .sidebar-option p {
+    opacity: 0;
+    width: 0;
+    transition: opacity 0.2s ease, width 0.2s ease;
+}
+
+.sidebar.collapsed .sidebar-option img {
+    margin-right: 0;
+}
