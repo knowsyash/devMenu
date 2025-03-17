@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './List.css';
 import axios from 'axios';
 
-const List = () => {
-  const url = `http://localhost:4000`; // Backend URL
+const List = ({url}) => {
+  // Backend URL
   const [list, setList] = useState([]);
 
   const fetchList = async () => {
